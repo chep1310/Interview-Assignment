@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Webpage</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <a href = "https://celebrare.in/"><img src = "/Resources/celebrare.jpeg" style="width:150px;height:130px;"></a>
+    </div>
+
+    <div>
+      <button id="undo" class="button"><img src="/Resources/undo.jpeg" style="width:30px;height:30px; mix-blend-mode: multiply;">UNDO</button>
+
+      <button id="redo" class="button"><img src="/Resources/redo.jpeg" style="width:30px;height:30px; mix-blend-mode: multiply;">REDO</button>
+    </div>
+  </header>
+
+  <main>
+    <div id="canvas">
+      <!-- White sheet-->
+    </div>
+  </main>
+
+   
+<div class="toolbar">
+    <div>
+      <select id="fontSelect" class="dropdown">
+        <option value="Arial">Arial</option>
+        <option value="Times New Roman">Times New Roman</option>
+        <option value="Verdana">Verdana</option>
+      </select>
+
+     
+        <button id="fontSizeDecrease" class="minus">
+          -
+        </button>
+        <span id="fontSizeDisplay" class="size">
+          16
+        </span>
+        <button id="fontSizeIncrease" class="plus">
+          +
+        </button>
+   
+    <button id="bold" class="B">
+      B
+    </button>
+    <button id="italic" class="I">
+      I
+    </button>
+    <button id="underline" class="U">
+      U
+    </button>
+    <button id="justify" class="justify">
+      Justify Text
+    </button>
+  </div>
+
+  <div>
+    <button id="addTextBox" class="addButton">
+       <img src= "/Resources/cursor.png" style="width:10px;height:12px;mix-blend-mode:multiply;">Add Text
+    </button>
+  </div>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
